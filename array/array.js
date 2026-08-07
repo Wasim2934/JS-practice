@@ -134,3 +134,122 @@
 // console.log(evenNums);
 
 // -------------------------------------------
+
+// 10. Check if an array is sorted in ascending order
+// let arr = [1, 2, 3, 4, 5];
+
+// const isSorted = true
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[i + 1]) {
+//         isSorted = false
+//         break;
+//     } 
+// }
+
+// console.log(isSorted)
+
+// ------------------------------------------
+
+// 11. Move all zeros to the end (Maintain order)
+// const arr = [1,0,2,0,3,4,0]
+
+// // Approach 1
+// let result = []
+// let zeroes = []
+
+// for (let num of arr) {
+//     if (num !== 0) {
+//         result.push(num)
+//     } else if (num == 0) {
+//         zeroes.push(num)
+//     }     
+// }
+
+// while(result.length < arr.length) {
+//     result.push(0)
+// }
+
+// console.log(result);
+
+// // Approach 2
+// let result = []
+// let zeroes = []
+
+// for (let num of arr) {
+//     if (num !== 0) {
+//         result.push(num)
+//     } else if (num == 0) {
+//         zeroes.push(num)
+//     }     
+// }
+
+// let newArr = [...result, ...zeroes]
+// console.log(newArr);
+
+// --------------------------------------
+
+// 12. Find the frequency of each element ✅✅
+// const arr = [1,2,2,3,3,3]
+
+// Using for of loop****
+// let obj = {}
+
+// for (let num of arr) {
+//     if (obj[num]) {
+//         obj[num]++
+//     } else {
+//         obj[num] = 1
+//     }
+// }
+
+// console.log(obj);
+
+// Using for loop*****
+// let obj = {}
+// for (let i = 0; i < arr.length; i++) {
+//     if (obj[arr[i]]) {
+//         obj[arr[i]]++
+//     } else {
+//         obj[arr[i]] = 1
+//     }
+// }
+
+// console.log(obj);
+
+// -------------------------------
+
+// 13. Find the element that appears the most ✅✅✅
+// const arr = [1,2,2,2,2,3,3,3,4]
+
+// let obj = {}
+// let maxCount = 0
+// let answer;
+
+
+// for (let num of arr) {
+//     if (obj[num]) {
+//         obj[num]++
+//     } else {
+//         obj[num] = 1
+//     }
+// }
+// console.log(obj);
+
+// for (let key in obj) {
+//     if (obj[key] > maxCount) {
+//         maxCount = obj[key]
+//         answer = key
+//     }
+// }
+
+// console.log("Answer:", answer, "Max Count:", maxCount);
+
+
+
+
+
+
+
+
+
