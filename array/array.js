@@ -143,52 +143,84 @@
 // 10. Check if an array is sorted in ascending order
 // let arr = [1, 2, 3, 4, 5];
 
+// let isSorted = true
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[i+1]) {
+//         isSorted = false
+//         break
+//     }
+// }
+
+// console.log('isSorted: ', isSorted);
 
 // ------------------------------------------
 
 // 11. Move all zeros to the end (Maintain order)
 // const arr = [1,0,2,0,3,4,0]
 
-// // Approach 1
-// let result = []
-// let zeroes = []
+// let newArr = []
 
 // for (let num of arr) {
 //     if (num !== 0) {
-//         result.push(num)
-//     } else if (num == 0) {
-//         zeroes.push(num)
-//     }     
+//         newArr.push(num)
+//     }
 // }
 
-// while(result.length < arr.length) {
-//     result.push(0)
+// while (newArr.length < arr.length) {
+//     newArr.push(0)
 // }
 
-// console.log(result);
+// console.log(newArr);
 
 // --------------------------------------
 
 // 12. Find the frequency of each element ✅✅
 // const arr = [1,2,2,3,3,3]
 
-// Using for of loop****
 // let obj = {}
 
-// for (let num of arr) {
-//     if (obj[num]) {
-//         obj[num]++
+// for (let i = 0; i < arr.length; i++) {
+//     if (obj[arr[i]]) {
+//         obj[arr[i]]++
 //     } else {
-//         obj[num] = 1
+//         obj[arr[i]] = 1
 //     }
 // }
 
 // console.log(obj);
 
+
 // -------------------------------
 
 // 13. Find the element that appears the most ✅✅✅
 // const arr = [1,2,2,2,2,3,3,3,4]
+
+// let obj = {}
+// let maxCount = 0
+// let frequentElem;
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (obj[arr[i]]) {
+//         obj[arr[i]]++
+//     } else {
+//         obj[arr[i]] = 1
+//     }
+// }
+
+// console.log(obj);
+
+// for (let key in obj) {
+//     if (obj[key] > maxCount) {
+//         maxCount = obj[key]
+//         frequentElem = key
+//     }
+// }
+
+// console.log('frequentElem:',frequentElem, ', maxCount:', maxCount);
+
+
+
 
 
 
