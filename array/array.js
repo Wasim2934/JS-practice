@@ -198,7 +198,7 @@
 
 // let obj = {}
 // let maxCount = 0
-// let frequentElem;
+// let frequentElem;  
 
 // for (let i = 0; i < arr.length; i++) {
 //     if (obj[arr[i]]) {
@@ -207,7 +207,7 @@
 //         obj[arr[i]] = 1
 //     }
 // }
-
+ 
 // console.log(obj);
 
 // for (let key in obj) {
