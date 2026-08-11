@@ -206,7 +206,7 @@
 //     } else {
 //         obj[arr[i]] = 1
 //     }
-// }
+// }  
  
 // console.log(obj);
 
@@ -214,7 +214,7 @@
 //     if (obj[key] > maxCount) {
 //         maxCount = obj[key]
 //         frequentElem = key
-//     }
+//     }  
 // }
 
 // console.log('frequentElem:',frequentElem, ', maxCount:', maxCount);
