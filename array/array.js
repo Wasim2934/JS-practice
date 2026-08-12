@@ -219,6 +219,72 @@
 
 // console.log('frequentElem:',frequentElem, ', maxCount:', maxCount);
 
+// ------------------------------------------------
+
+// Separate the numbers and strings into two different arrays:
+  
+// let arr = [10, "hello", 20, "world", 30, "JavaScript"];
+
+// let numArr = [];
+// let strArr = [];
+
+// for (let val of arr) {
+//     if (typeof val === 'number') {
+//         numArr.push(val)
+//     } else if (typeof val === 'string') {
+//         strArr.push(val)
+//     }
+// }
+
+// console.log(numArr);
+// console.log(strArr);
+
+// ------------------------------------------
+
+// seperate the numbers and character (h, d, u) in two different array
+
+// let arr = [10, "h", 20, "d", 30, "JavaScript", "u"];
+
+// let numArr = []
+// let charArr = []
+
+// using for loop*********
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] == 'number') {
+//         numArr.push(arr[i])
+//     } else if (typeof arr[i] == 'string' && arr[i].length == 1) {
+//         charArr.push(arr[i])
+//     }
+// }
+
+// console.log(numArr);
+// console.log(charArr);
+
+// using for of loop*********
+// for (let val of arr) {
+//     if (typeof val === 'number') {
+//         numArr.push(val)
+//     } else if (typeof val === 'string' && val.length == 1) {
+//         charArr.push(val)
+//     }
+// }
+
+// console.log(numArr);
+// console.log(charArr);
+
+// What will be the output ----------------------
+// let arr = [1, 2, 3, 4, 5];
+
+// let arr2 = arr.map((x) => x > 5);
+
+// console.log(arr2);
+
+// --------------------------------------
+
+
+
+
+
 
 
 

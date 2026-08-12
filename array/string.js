@@ -2,7 +2,7 @@
 // Input: "hello"
 // Output: "olleh"
 
-let str = "hello";
+// let str = "hello";
 
 // *************
 // let result = str.split('').reverse().join('') 
@@ -16,6 +16,10 @@ let str = "hello";
 // }
 
 // console.log(result);
+
+// ---------------------------------------------
+
+
 
 
 
