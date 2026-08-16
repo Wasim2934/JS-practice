@@ -184,25 +184,51 @@
 // --------------------------------------
 
 // 12. Find the frequency of each element ✅✅
-const arr = [1,2,2,3,3,3]
+// const arr = [1,2,2,3,3,3]
 
-let result = {}
+// let result = {}
 
-for (let val in arr) {
-    if (result.val) {
-        result.val++
-    }
-    
-}
+// for (let i = 0; i < arr.length; i++) {  ***********
+//     if (result[arr[i]]) {
+//         result[arr[i]]++
+//     } else {
+//         result[arr[i]] = 1
+//     }
+// }
 
+// console.log(result);
 
+// for (let val of arr) {  ************
+//     if (result[val]) {
+//         result[val]++
+//     } else {
+//         result[val] = 1
+//     }
+// }
 
+// console.log(result);
 
 // -------------------------------
 
 // 13. Find the element that appears the most ✅✅✅
 // const arr = [1,2,2,2,2,3,3,3,4]
 
+// let frequencyOfArr = {}
+
+// let maxCount = 0
+
+// for (let val of arr) {
+//     if (frequencyOfArr[val]) {
+//         frequencyOfArr[val]++
+//     } else frequencyOfArr[val] = 1
+// }
+// for (let val in frequencyOfArr) {
+//     if (frequencyOfArr[val] > maxCount) {
+//         maxCount = frequencyOfArr[val]
+//     }
+// }
+
+// console.log(frequencyOfArr, 'maxCount: ', maxCount);
 
 // ------------------------------------------------
 
@@ -210,18 +236,48 @@ for (let val in arr) {
   
 // let arr = [10, "hello", 20, "world", 30, "JavaScript"];
 
+// let numbers = []
+// let strings = []
+
+// for (let val of arr) {
+//     if (typeof val === 'number') {
+//         numbers.push(val)
+//     } else {
+//         strings.push(val)
+//     }
+// }
+
+// console.log(numbers, strings);
+
+
 
 
 // ------------------------------------------
 
-// seperate the numbers and character (h, d, u) in two different array
+// seperate the numbers and character (h, d, u) in two separate arrays
 
 // let arr = [10, "h", 20, "d", 30, "JavaScript", "u"];
 
+// let numbers = []
+// let char = []
+
+// for (let val of arr) {
+//     if (typeof val === 'number') {
+//         numbers.push(val)
+//     } else if (typeof val === 'string' && val.length === 1) {
+//         char.push(val)
+//     }
+// }
+
+// console.log(numbers, char);
 
 
 // What will be the output ----------------------
 // let arr = [1, 2, 3, 4, 5];
+// let arr2 = arr.map(val => val > 5)
+
+// console.log(arr2); // false
+
 
 
 
