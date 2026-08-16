@@ -1,11 +1,11 @@
 // // 1. Find the largest number ✅
 // const arr = [12, 45, 7, 89, 23];
 
-// let largestNum = arr[0]
+// let largestNum = arr[0];
 
-// for (let num of arr) {
-//     if (num > largestNum) {
-//         largestNum = num
+// for (let val of arr) {
+//     if (val > largestNum) {
+//         largestNum = val
 //     }
 // }
 
@@ -18,9 +18,9 @@
 
 // let smallestNum = arr[0]
 
-// for (let num of arr) {
-//     if (num < smallestNum) {
-//         smallestNum = num
+// for (let val of arr) {
+//     if (val < smallestNum) {
+//         smallestNum = val
 //     }
 // }
 
@@ -32,85 +32,76 @@
 
 // const arr = [10, 25, 8, 40, 35, 89];
 
-// let largestNum = -Infinity
+// let firstLargestNum = -Infinity
 // let secondLargestNum = -Infinity
 
 // for (let num of arr) {
-//     if (num > largestNum) {
-//         secondLargestNum = largestNum
-//         largestNum = num
-//     } else if (num > secondLargestNum && num !== largestNum) {
+//     if (num > firstLargestNum) {
+//         secondLargestNum = firstLargestNum;
+//         firstLargestNum = num;
+//     } else if (num > secondLargestNum && num !== firstLargestNum) {
 //         secondLargestNum = num
 //     }
 // }
 
-// console.log(secondLargestNum);
+// console.log('firstLargestNum: ', firstLargestNum, 'secondLargestNum: ', secondLargestNum);
 
 // -------------------------------------------
 
 // 4. Calculate the sum of all elements.
 // const arr = [12, 45, 7, 89, 23, 5];
 
-// using reduce method*******
-// let sum = arr.reduce((acc,index) => acc + index, 0)
-// console.log(sum);
-
-// using for of loop********
 // let sum = 0
-// for (let num of arr) {
-//     sum += num
+
+// for (let val of arr) {
+//     sum += val
 // }
 
-// console.log(sum); 
+// console.log(sum);
 
 // --------------------------------------------
 // 5. Calculate the average of all elements.
 // const arr = [12, 45, 7, 89, 23, 5];
 
-// using reduce method*****
-// let avg = arr.reduce((acc, curr) => acc + curr, 0) / arr.length
-// console.log(avg);
-
-// using for of loop******
 // let sum = 0
-// for (let num of arr) {
-//     sum += num
+
+// for (let val of arr) {
+//     sum += val
 // }
 
 // let avg = sum / arr.length
 
-// console.log(avg);
+// console.log(avg.toFixed());
 
 // -----------------------------------------------
 
 // 6. Count the number of even and odd elements.
 // const arr = [12, 45, 7, 89, 23, 5, 36];
 
-// let evenElem = 0
-// let oddElem = 0
+// let evenNum = 0
+// let oddNum = 0
 
-// for (let num of arr) {
-//     if (num % 2 === 0) {
-//         evenElem++
-//     } else oddElem++
+// for (let val of arr) {
+//     if (val % 2 == 0) {
+//         evenNum++
+//     } else oddNum++
 // }
 
-// console.log('evenElem:', evenElem, 'oddElem:', oddElem);
+// console.log('evenNum: ', evenNum, 'oddNum: ', oddNum);
 
 // ---------------------------------------------
 
 // 7. Remove Duplicate Elements ✅
 // const arr = [1, 2, 2, 3, 4, 4, 5];
 
-// let newArr = [];
-
-// for (let num of arr) {
-//     if (!newArr.includes(num)) {
-//         newArr.push(num)
-//     }
+// let result = []
+// for (let val of arr) {
+//     if (!result.includes(val)) {
+//         result.push(val)
+//     } 
 // }
 
-// console.log(newArr);
+// console.log(result);
 
 // -------------------------------------------
 
@@ -118,8 +109,9 @@
 // const arr = [1, 2, 3, 4, 5];
 
 // let reversedArr = []
+
 // for (let i = arr.length-1; i >= 0; i--) {
-//     reversedArr.push(arr[i]);
+//     reversedArr.push(arr[i])
 // }
 
 // console.log(reversedArr);
@@ -131,64 +123,79 @@
 
 // let evenNum = []
 
-// for (let num of arr) {
-//     if (num % 2 === 0) {
-//         evenNum.push(num);
+// for (let val of arr) {
+//     if (val % 2 == 0) {
+//         evenNum.push(val)
 //     }
 // }
-// console.log(evenNum);
+
+// console.log('evenNum: ', evenNum);
 
 // -------------------------------------------
 
 // 10. Check if an array is sorted in ascending order
 // let arr = [1, 2, 3, 4, 5];
 
-// let isSorted = true
+// let sortedArr = true
 
 // for (let i = 0; i < arr.length; i++) {
 //     if (arr[i] > arr[i+1]) {
-//         isSorted = false
+//         sortedArr = false
 //         break
 //     }
 // }
 
-// console.log('isSorted: ', isSorted);
+// console.log(sortedArr);
+
+
 
 // ------------------------------------------
 
 // 11. Move all zeros to the end (Maintain order)
 // const arr = [1,0,2,0,3,4,0]
 
-// let newArr = []
+// let nonZero = []  *************
+// let zeros = []
 
-// for (let num of arr) {
-//     if (num !== 0) {
-//         newArr.push(num)
-//     }
+// for (let val of arr) {
+//     if (val !== 0) {
+//         nonZero.push(val)
+//     } else zeros.push(val)
 // }
 
-// while (newArr.length < arr.length) {
-//     newArr.push(0)
+// let result = [...nonZero, ...zeros]
+
+// console.log(result);
+
+// let nonZero = []
+
+// for (let val of arr) {
+//     if (val !== 0) {
+//         nonZero.push(val)
+//     } 
 // }
 
-// console.log(newArr);
+// while(nonZero.length !== arr.length) {
+//     nonZero.push(0)
+// }
+
+// console.log(nonZero);
 
 // --------------------------------------
 
 // 12. Find the frequency of each element ✅✅
-// const arr = [1,2,2,3,3,3]
+const arr = [1,2,2,3,3,3]
 
-// let obj = {}
+let result = {}
 
-// for (let i = 0; i < arr.length; i++) {
-//     if (obj[arr[i]]) {
-//         obj[arr[i]]++
-//     } else {
-//         obj[arr[i]] = 1
-//     }
-// }
+for (let val in arr) {
+    if (result.val) {
+        result.val++
+    }
+    
+}
 
-// console.log(obj);
+
 
 
 // -------------------------------
@@ -196,28 +203,6 @@
 // 13. Find the element that appears the most ✅✅✅
 // const arr = [1,2,2,2,2,3,3,3,4]
 
-// let obj = {}
-// let maxCount = 0
-// let frequentElem;  
-
-// for (let i = 0; i < arr.length; i++) {
-//     if (obj[arr[i]]) {
-//         obj[arr[i]]++
-//     } else {
-//         obj[arr[i]] = 1
-//     }
-// }  
- 
-// console.log(obj);
-
-// for (let key in obj) {
-//     if (obj[key] > maxCount) {
-//         maxCount = obj[key]
-//         frequentElem = key
-//     }  
-// }
-
-// console.log('frequentElem:',frequentElem, ', maxCount:', maxCount);
 
 // ------------------------------------------------
 
@@ -225,19 +210,7 @@
   
 // let arr = [10, "hello", 20, "world", 30, "JavaScript"];
 
-// let numArr = [];
-// let strArr = [];
 
-// for (let val of arr) {
-//     if (typeof val === 'number') {
-//         numArr.push(val)
-//     } else if (typeof val === 'string') {
-//         strArr.push(val)
-//     }
-// }
-
-// console.log(numArr);
-// console.log(strArr);
 
 // ------------------------------------------
 
@@ -245,39 +218,12 @@
 
 // let arr = [10, "h", 20, "d", 30, "JavaScript", "u"];
 
-// let numArr = []
-// let charArr = []
 
-// using for loop*********
-// for (let i = 0; i < arr.length; i++) {
-//     if (typeof arr[i] == 'number') {
-//         numArr.push(arr[i])
-//     } else if (typeof arr[i] == 'string' && arr[i].length == 1) {
-//         charArr.push(arr[i])
-//     }
-// }
-
-// console.log(numArr);
-// console.log(charArr);
-
-// using for of loop*********
-// for (let val of arr) {
-//     if (typeof val === 'number') {
-//         numArr.push(val)
-//     } else if (typeof val === 'string' && val.length == 1) {
-//         charArr.push(val)
-//     }
-// }
-
-// console.log(numArr);
-// console.log(charArr);
 
 // What will be the output ----------------------
 // let arr = [1, 2, 3, 4, 5];
 
-// let arr2 = arr.map((x) => x > 5);
 
-// console.log(arr2);
 
 // --------------------------------------
 
