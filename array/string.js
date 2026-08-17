@@ -17,9 +17,9 @@
 // 2. Check Palindrome
 // Input: "madam" → true
 // Input: "hello" → false
-
-// let str = "madam"
-
+ 
+// let str = "madam" 
+    
 // let result = str.split('').reverse().join('')
 
 // if (str === result) {
@@ -27,17 +27,17 @@
 // } else {
 //     console.log(`No, it's not a palindrome`);
 // }
-
+   
 // ---------------------------------------------
-
+   
 // 3. Count Characters
 // Input: "hello"
 // Output: { h: 1, e: 1, l: 2, o: 1 }
-
+ 
 // let str = "hello"
-
+ 
 // let result = {}
-
+ 
 // for (let char of str) {
 //     if (result[char]) {
 //         result[char]++
