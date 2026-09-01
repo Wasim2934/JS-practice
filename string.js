@@ -163,6 +163,19 @@
 
 // console.log(result);
 
+// ----------------------------------------
+
+// let str1 = "abc"; ******************
+// let str2 = "123";
+
+// let res = "";
+
+// for (let i = 0; i < str1.length; i++) {
+//   res = res + str1[i] + str2[i];
+// }
+
+// console.log(res);           // output : a1b2c3
+
 
 
 

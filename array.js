@@ -98,7 +98,7 @@
 // for (let val of arr) {
 //     if (!result.includes(val)) {
 //         result.push(val)
-//     } 
+//     }
 // }
 
 // console.log(result);
@@ -147,8 +147,6 @@
 
 // console.log(sortedArr);
 
-
-
 // ------------------------------------------
 
 // 11. Move all zeros to the end (Maintain order)
@@ -172,7 +170,7 @@
 // for (let val of arr) {
 //     if (val !== 0) {
 //         nonZero.push(val)
-//     } 
+//     }
 // }
 
 // while(nonZero.length !== arr.length) {
@@ -233,7 +231,7 @@
 // ------------------------------------------------
 
 // Separate the numbers and strings into two different arrays:
-  
+
 // let arr = [10, "hello", 20, "world", 30, "JavaScript"];
 
 // let numbers = []
@@ -248,9 +246,6 @@
 // }
 
 // console.log(numbers, strings);
-
-
-
 
 // ------------------------------------------
 
@@ -271,32 +266,26 @@
 
 // console.log(numbers, char);
 
-
 // What will be the output ----------------------
 // let arr = [1, 2, 3, 4, 5];
 // let arr2 = arr.map(val => val > 5)
 
 // console.log(arr2); // false
 
-
-
-
 // --------------------------------------
 
+// let arr = [10, 25, 15, 5, 8] ***********************
 
+// let target = 25
 
+// function indiceOfElem(arr, target) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] + arr[j] === target) {
+//                 console.log([i, j]); 
+//             }
+//         }
+//     }
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// indiceOfElem(arr, target)
