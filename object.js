@@ -57,7 +57,6 @@
 
 // ----------------------------------
 
-
 // 5. Check if Property Exists
 // Check whether email exists in the object.
 
@@ -70,13 +69,3 @@
 // if (user.email) {
 //     console.log('email exist');
 // } else console.log('email does not exist');
-
-
-
-
-
-
-
-
-
-
