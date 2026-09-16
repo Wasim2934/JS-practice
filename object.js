@@ -50,15 +50,15 @@
 //   age: 24,
 //   city: "Delhi"
 // };
-
+                    
 // delete user.city
-
+                     
 // console.log(user);
 
 // ----------------------------------
 
 // 5. Check if Property Exists
-// Check whether email exists in the object.
+// Check whether email exists in the object.               
 
 // const user = {
 //   name: "Rahul",
@@ -68,4 +68,4 @@
 
 // if (user.email) {
 //     console.log('email exist');
-// } else console.log('email does not exist');
+// } else console.log('email does not exist')
