@@ -128,7 +128,7 @@
 
 // console.log(LongestWord);
 
-// ----------------------------------------
+// ----------------------------------
 
 // 9. Count Occurrence of a Character
 // let str = "javascript"
@@ -144,7 +144,7 @@
 
 // console.log(charOccurrence);
 
-// -----------------------------------------
+// ------------------------------------
 
 // 10. Remove Duplicate Characters
 // Input: "programming"
