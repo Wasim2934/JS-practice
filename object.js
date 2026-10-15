@@ -45,15 +45,15 @@
 // 4. Delete a Property
 // Delete the city property.
 
-// const user = {
-//   name: "Rahul",
-//   age: 24,
-//   city: "Delhi"
-// };
+const user = {
+  name: "Rahul",
+  age: 24,
+  city: "Delhi"
+};
                     
-// delete user.city
+delete user.city
                      
-// console.log(user);
+console.log(user);
 
 // ----------------------------------
 
