@@ -60,12 +60,12 @@
 // 5. Check if Property Exists
 // Check whether email exists in the object.               
 
-// const user = {
-//   name: "Rahul",
-//   age: 24,
-//   city: "Delhi"
-// };
+const user = {
+  name: "Rahul",
+  age: 24,
+  city: "Delhi"
+};
 
-// if (user.email) {
-//     console.log('email exist');
-// } else console.log('email does not exist')
+if (user.email) {
+    console.log('email exist');
+} else console.log('email does not exist')
