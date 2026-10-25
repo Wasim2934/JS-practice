@@ -11,7 +11,7 @@
 // console.log(age);
 // console.log(city);
 
-// ----------------------------------
+// ----------------------
 
 // 2. Add a New Property
 // Add isAdmin: true and print the complete object.
