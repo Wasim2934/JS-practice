@@ -40,7 +40,7 @@
 
 // console.log(user);
 
-// ----------------------------------
+// -----------------------
 
 // 4. Delete a Property
 // Delete the city property.
@@ -55,7 +55,7 @@ delete user.city
                      
 console.log(user);
 
-// ----------------------------------
+// ---------------------
 
 // 5. Check if Property Exists
 // Check whether email exists in the object.               
