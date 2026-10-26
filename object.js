@@ -2,7 +2,7 @@
 // const user = {
 //   name: "Rahul",
 //   age: 24,
-//   city: "Delhi"
+//   city: "Mumbai"
 // };
 
 // let {name, age, city} = user
