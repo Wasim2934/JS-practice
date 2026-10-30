@@ -94,7 +94,7 @@
 //     }
 // }
 
-// console.log(vowelCount);
+console.log(vowelCount);
 
 // --------------------------------------
 
